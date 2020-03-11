@@ -64,7 +64,7 @@
     </section>
     <section class="content-pick">
 
-      <div class="destination">
+      <div id="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)" class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
@@ -79,12 +79,26 @@
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
-    </section>
+      </section>
+
+      <section class= "dropzone">
+
+        <div class="controls">
+          <button id="reload" type="button">Reload</button>
+        </div>
+        
+        <div class="event-log">
+          <label>Event log:</label>
+          <textarea readonly class="event-log-contents" rows="8" cols="30"></textarea>
+        </div>
+      </section>
   </div><!-- container -->
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
   </footer>
+
+  
 
 </body>
 </html>
